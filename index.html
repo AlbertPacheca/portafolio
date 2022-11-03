@@ -9,83 +9,50 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
 
 <body>
 	<!-------------------- BARRA --------------------------->
-	<div class="barra">
-		<h2>Albert Pacheca</h2>
-		<a href="otros/curriculum-vitae.pdf"><button class="btncv">Curriculum Vitae</button></a>
-	</div>
-	<div class="contenedor">
-		<!-------------------- CARRUSEL --------------------------->
-		<div class="w3-content w3-display-container"> <img class="mySlides" src="img/head/marca.png" style="width:100%"> <img class="mySlides" src="img/head/adobe.png" style="width:100%"> <img class="mySlides" src="img/head/maquetador.png" style="width:100%">
-			<button class="izquierda" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="derecha" onclick="plusDivs(1)">&#10095;</button>
-		</div>
-		<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
+<ul class="barra">
+	<li class="menu"><a href="#inicio"><img src="img/logo.png"/></a>
+	</div></li>
+	<a href="#work"><li class="menu">TRABAJOS</li></a>
+	<a href="#contacto"><li class="menu">CONTACTO</li></a>
+</ul>
 
-		function plusDivs(n) {
-			showDivs(slideIndex += n);
-		}
 
-		function showDivs(n) {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			if(n > x.length) {
-				slideIndex = 1
-			}
-			if(n < 1) {
-				slideIndex = x.length
-			}
-			for(i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-			x[slideIndex - 1].style.display = "block";
-		}
-		</script>
+
+	<!--------------------PRESENTACION ------------------------>
+	<a name="inicio"></a>
+	<div class="presentacion">
+		<h1>Desliza para ver algunos de mis trabajos</h1>
+		<a href="#work"><div class="boton"></div></a>
 	</div>
+
 	<!--------------------TRABAJOS --------------------------->
-	<div class="nosequeponer">
+	<a name="work"></a>
+	<div class="nosequeponer" id="trabajo">
 		<ul id="trabajos">
-			<a href="away/index.html">
-				<li class="ejemplos"><img src="img/away/tarjetas.png" />
+
+			<a href="https://www.behance.net/gallery/156240625/Typo">
+				<li class="ejemplos"><img src="img/typo/typo_portada.png" />
 					<div class="capa">
 						<h3>Ver Proyecto</h3> </div>
 				</li>
 			</a>
-			<a href="ccoomics/ccoomic.pdf">
-				<li class="ejemplos"><img src="img/ccoomics/ccoomics.png" />
+			<a href="https://www.behance.net/gallery/156241121/Away">
+				<li class="ejemplos"><img src="img/away/away_portada.png" />
 					<div class="capa">
 						<h3>Ver Proyecto</h3> </div>
 				</li>
 			</a>
-			<a href="lights/index.html">
-				<li class="ejemplos"><img src="img/lights/logo.png" />
-					<div class="capa">
-						<h3>Ver Proyecto</h3> </div>
-				</li>
-			</a>
-			<li class="ejemplos"><img src="img/coming.png" />
-				<div class="capa">
-					<h3>Ver Proyecto</h3> </div>
-			</li>
-			<li class="ejemplos"><img src="img/coming.png" />
-				<div class="capa">
-					<h3>Ver Proyecto</h3> </div>
-			</li>
-			<li class="ejemplos"><img src="img/coming.png" />
-				<div class="capa">
-					<h3>Ver Proyecto</h3> </div>
-			</li>
 		</ul>
 	</div>
 	<!--------------------FOOTER --------------------------->
 
 </body>
+<a name="contacto"></a>	
 <div class="footer">
     <section class="buttons">
         <a href="https://api.whatsapp.com/send?phone=34623206385" class="fa fa-whatsapp"></a>
